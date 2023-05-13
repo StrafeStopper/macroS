@@ -14,8 +14,7 @@ void fileio()
 
 int main( int argc, char* args[])
 {
-    cout << "Welcome to simple-macro!"
-    printf(" \nThis is a simple command line tool that allows the user to run code, commands, long macros, etc with the push of a button. ");
+    cout << "Welcome to simple-macro!" << endl << "This is a simple command line tool that allows the user to run code, commands, long macros, etc with the push of a button. " << endl;
 
     fileio();
 
