@@ -26,6 +26,6 @@ linux: $(OBJS)
 
 #Compile for windows
 windows: $(OBJS)
-	gcc $(OBJS) $(COMPILER_FLAGS) $(WINDOWS_FLAGS) -o $(WINDOWS_OBJ)
-#@echo "Updating the build number"
+	g++ $(OBJS) $(COMPILER_FLAGS) -o $(WINDOWS_OBJ)
+	@echo "Done"
 #settings/build_number_w.sh

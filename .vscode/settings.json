@@ -1,4 +1,11 @@
 {
     "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
-    "makefile.makePath": "mingw32-make"
+    "makefile.makePath": "C:\\msys64\\mingw64\\bin\\mingw32-make",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "d:\\Documents\\CPP\\simple-macro",
+            "binaryPath": "d:\\Documents\\CPP\\simple-macro\\simple-macro.exe",
+            "binaryArgs": []
+        }
+    ]
 }
