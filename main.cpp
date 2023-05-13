@@ -2,8 +2,22 @@
 
 using namespace std;
 
+string line;
+
+void fileio()
+{
+    ofstream test_file;
+    test_file.open ("test.txt");
+    test_file << "this is a test";
+    test_file.close();
+}
+
 int main( int argc, char* args[])
 {
-    printf("Welcome to simple-macro! \nThis is a simple command line tool that allows the user to run code, commands, long macros, etc with the push of a button. ");
+    cout << "Welcome to simple-macro!"
+    printf(" \nThis is a simple command line tool that allows the user to run code, commands, long macros, etc with the push of a button. ");
+
+    fileio();
+
     return 0;
 }
