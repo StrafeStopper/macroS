@@ -7,5 +7,9 @@
             "binaryPath": "d:\\Documents\\CPP\\simple-macro\\simple-macro.exe",
             "binaryArgs": []
         }
-    ]
+    ],
+    "files.associations": {
+        "iosfwd": "cpp",
+        "iostream": "cpp"
+    }
 }

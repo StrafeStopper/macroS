@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h>      // standard input-output
 #include <iostream>     // input-output stream
 #include <windows.h>    // importing windows function
 #include <conio.h>      // console input-output
