@@ -1,5 +1,5 @@
 #OBJS: Files to be compiled
-OBJS = main.cpp
+OBJS = main.cpp fileio.cpp record.cpp
 
 #OBJ_NAME: Name of the executeable
 LINUX_OBJ = simple-macro
@@ -27,5 +27,5 @@ linux: $(OBJS)
 #Compile for windows
 windows: $(OBJS)
 	g++ $(OBJS) $(COMPILER_FLAGS) -o $(WINDOWS_OBJ)
-	@echo "Done"
+	@echo Done
 #settings/build_number_w.sh

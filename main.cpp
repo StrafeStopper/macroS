@@ -5,6 +5,7 @@
 using namespace std;
 
 string line;
+string ioTest;
 int menuOption;
 
 
@@ -17,7 +18,7 @@ int menu()
     << "2) Exit" << endl;
     cin >> m;
     return m;
-}
+};
 
 int main( int argc, char* args[])
 {
@@ -31,9 +32,13 @@ int main( int argc, char* args[])
     */
 
     menuOption = menu();
-    cout << menuOption;
 
-    fileio("testtttttt", "test.txt");
+   
+
+    cout << menuOption;
+    cin >> ioTest;
+
+    fileio( ioTest, "test.txt");
 
     return 0;
-}
+};
