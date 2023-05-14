@@ -2,4 +2,6 @@
 
 using namespace std;
 
-void fileio( string input, string filename );
+void writeMacro( string input, string filename );
+
+void newMacroFile( string filename );

@@ -4,10 +4,8 @@
 
 using namespace std;
 
-string line;
-string ioTest;
-int menuOption;
-
+int menuOption = NULL;
+string fileName = "New.txt";
 
 
 int menu()
@@ -32,13 +30,24 @@ int main( int argc, char* args[])
     */
 
     menuOption = menu();
+    switch(menuOption)
+    {
+        case 1:
+            cout << "Make new macro." << endl;
+            recordString( "Please type full file name for new macro" );
+            newMacroFile(fileName);
+            break;
+        
+        case 2:
+            cout << "Exiting..." << endl;
+            break;
+
+        default:
+            cout << "Invalid menu option." << endl;
+            break;
+    }
 
    
-
-    cout << menuOption;
-    cin >> ioTest;
-
-    fileio( ioTest, "test.txt");
 
     return 0;
 };

@@ -2,11 +2,18 @@
 
 using namespace std;
 
-void fileio( string input, string filename )
+void writeMacroFile( string input, string filename )
 {
     //writes a given string to a file
     ofstream test_file;
     test_file.open (filename, ios::out);
     test_file << input;
     test_file.close();
+};
+
+void newMacroFile(string filename)
+{
+    ofstream newFile;
+    newFile.open (filename, ios::out);
+    cout << "New file named: " << filename << " created!" << endl;
 };
