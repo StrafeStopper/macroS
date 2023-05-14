@@ -14,16 +14,21 @@ string recordString(string message)
 void recordKeyStroke()
 {
     int macroLength;
-    cout << "How many keys long is your macro? (including the modifier)" << endl;
+    string modifierKeys[3];
+
+    cout << "" << endl;
     cin >> macroLength;
 
     if (macroLength < 1 && macroLength >= 3)
     {
         cout << "Invalid length!" << endl;
     } else {
-         for ( int i = 0; i < macroLength; i++ )
-         {
-            cin >> //im making an array for the keystrokes
-         }
+
+        string macro[macroLength];
+        for ( int i = 0; i < macroLength; i++ )
+        {
+            cout << "recording key number: " << i << endl;
+            
+        }
     }
 }

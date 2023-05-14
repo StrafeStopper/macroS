@@ -16,7 +16,8 @@ int menu()
     int m;
     cout << endl << "Select an option from the below list:" << endl;
     cout << "1) New macro" << endl 
-    << "2) Exit" << endl;
+    << "2) Edit Macro" << endl
+    << "3) Exit" << endl;
     cin >> m;
     return m;
 };
@@ -36,14 +37,18 @@ int main( int argc, char* args[])
     switch(menuOption)
     {
         case 1:
-            cout << "Make new macro." << endl;
-            fileName = recordString( "Please type full file name for new macro" );
+            cout << "make_macro" << endl;
+            fileName = recordString( "Please enter name for new macro: " );
             newMacroFile(fileName);
             break;
         
         case 2:
-            cout << "Exiting..." << endl;
+            cout << "edit_macro" << endl;
             break;
+
+        case 3:
+            cout << "exiting...." << endl;
+            return 0;
 
         default:
             cout << "Invalid menu option." << endl;

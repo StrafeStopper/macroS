@@ -14,6 +14,8 @@ void writeMacroFile( string input, string filename )
 void newMacroFile(string filename)
 {
     ofstream newFile;
+    filename.append(".txt");
     newFile.open (filename, ios::out);
     cout << "New file named: " << filename << " created!" << endl;
+    newFile.close();
 };
