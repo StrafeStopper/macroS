@@ -40,6 +40,7 @@ int main( int argc, char* args[])
             cout << "make_macro" << endl;
             fileName = recordString( "Please enter name for new macro: " );
             newMacroFile(fileName);
+            recordKeyStroke();
             break;
         
         case 2:
