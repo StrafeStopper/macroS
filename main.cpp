@@ -1,11 +1,14 @@
 #include "main.h"
 #include "fileio.h"
 #include "record.h"
+#include "keytable.h"
 
 using namespace std;
 
 int menuOption = NULL;
 string fileName = "New.txt";
+char keyPress;
+int ascii_value;
 
 
 int menu()
@@ -34,7 +37,7 @@ int main( int argc, char* args[])
     {
         case 1:
             cout << "Make new macro." << endl;
-            recordString( "Please type full file name for new macro" );
+            fileName = recordString( "Please type full file name for new macro" );
             newMacroFile(fileName);
             break;
         

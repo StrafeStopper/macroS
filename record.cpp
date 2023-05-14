@@ -4,14 +4,14 @@ using namespace std;
 
 string recordString(string message)
 {
-    string input = NULL;
+    string input;
     cout << message << endl;
     cin >> input;
 
     return input;
 }
 
-void recordMacroInput()
+void recordKeyStroke()
 {
     //key stroke recording will go here
 }

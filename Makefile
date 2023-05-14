@@ -1,5 +1,5 @@
 #OBJS: Files to be compiled
-OBJS = main.cpp fileio.cpp record.cpp
+OBJS = main.cpp fileio.cpp record.cpp keytable.cpp
 
 #OBJ_NAME: Name of the executeable
 LINUX_OBJ = simple-macro
