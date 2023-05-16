@@ -40,6 +40,7 @@ int main( int argc, char* args[])
             cout << "make_macro" << endl;
             fileName = recordString( "Please enter name for new macro: " );
             newMacroFile(fileName);
+            cout << "You can have up to two modifier keys and one regualar key. " << endl;
             recordKeyStroke();
             break;
         

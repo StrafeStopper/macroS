@@ -9,4 +9,5 @@ enum key_hash
     SHIFT,
 };
 
-string toTable(key_hash key);
+key_hash hash_key(string key);
+string lowercase(string lower);
