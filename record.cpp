@@ -1,7 +1,7 @@
 #include "record.h"
 #include "keytable.h"
 
-using namespace std;
+//using namespace std;
 
 string recordString(string message)
 {
@@ -12,7 +12,7 @@ string recordString(string message)
     return input;
 }
 
-void registerKey(string keyArray[4])
+bool registerKey(string keyArray[4])
 {
     //register a windows hotkey difined by user input
 }
@@ -38,45 +38,218 @@ void recordKeyStroke()
             lengthI++;
         }
     }
-/*
-    cout << "Please choose up to two modifier keys: " << endl << "1) CTRL" << endl << "2) ALT" << endl << "3) SHIFT" << endl << "4) No key " << endl;
-    for (int i = 0; i < 2; i++)
-    {
-        cout << "Select modifier " << i +1 << ": ";
-        cin >> modifierKeys[i];
-    }
-    */
+
 
     string macro[macroLength];
+    cout << "Accepted modifier keys are CTRL, ALT, SHIFT. Most alpha keys are accepted." << endl;
+    cout << "Start with the modifiers and end with your regular key." << endl;
+
     for (int i = 0; i < macroLength; i++)
     {
-        cout << "Accepted modifier keys are CTRL, ALT, SHIFT. Most alpha keys are accepted." << endl;
         cout << "Please type key number " << i + 1 << ": ";
         cin >> key;
-        cout << "Recorded key was " << key << " converting..." << endl;
+        //cout << "Recorded key was " << key << " converting..." << endl;
         keyH = hash_key(key);
 
-        // put a switch here
-
-        /*
-        key = _getch();
-        ascii_value = key;
-        cout << "Recorded key --> " << key << endl;
-        cout << "Recorded async value --> " << ascii_value << endl;
-        if (7 < ascii_value && ascii_value < 256)
+        switch(keyH)
         {
-            if (GetAsyncKeyState(VK_F24))
-            {
-                cout << "[F24]";
-            }
-            else if (GetAsyncKeyState(VK_F24))
-            {
-                cout << "[F24]";
-            }
-            else
-            {
-                cout << key;
-            }
-        } */
+        case CTRL:
+            macro[i] = keyH;
+            break;
+        case ALT:
+            macro[i] = keyH;
+            break;
+        case SHIFT:
+            macro[i] = keyH;
+            break;
+        case F1:
+            macro[i] = keyH;
+            break;
+        case F2:
+            macro[i] = keyH;
+            break;
+        case F3:
+            macro[i] = keyH;
+            break;
+        case F4:
+            macro[i] = keyH;
+            break;
+        case F5:
+            macro[i] = keyH;
+            break;
+        case F6:
+            macro[i] = keyH;
+            break;
+        case F7:
+            macro[i] = keyH;
+            break;
+        case F8:
+            macro[i] = keyH;
+            break;
+        case F9:
+            macro[i] = keyH;
+            break;
+        case F10:
+            macro[i] = keyH;
+            break;
+        case F11:
+            macro[i] = keyH;
+            break;
+        case F12:
+            macro[i] = keyH;
+            break;
+        case F13:
+            macro[i] = keyH;
+            break;
+        case F14:
+            macro[i] = keyH;
+            break;
+        case F15:
+            macro[i] = keyH;
+            break;
+        case F16:
+            macro[i] = keyH;
+            break;
+        case F17:
+            macro[i] = keyH;
+            break;
+        case F18:
+            macro[i] = keyH;
+            break;
+        case F19:
+            macro[i] = keyH;
+            break;
+        case F20:
+            macro[i] = keyH;
+            break;
+        case F21:
+            macro[i] = keyH;
+            break;
+        case F22:
+            macro[i] = keyH;
+            break;
+        case F23:
+            macro[i] = keyH;
+            break;
+        case F24:
+            macro[i] = keyH;
+            break;
+        case Q:
+            macro[i] = keyH;
+            break;
+        case W:
+            macro[i] = keyH;
+            break;
+        case E:
+            macro[i] = keyH;
+            break;
+        case R:
+            macro[i] = keyH;
+            break;
+        case T:
+            macro[i] = keyH;
+            break;
+        case Y:
+            macro[i] = keyH;
+            break;
+        case U:
+            macro[i] = keyH;
+            break;
+        case I:
+            macro[i] = keyH;
+            break;
+        case O:
+            macro[i] = keyH;
+            break;
+        case P:
+            macro[i] = keyH;
+            break;
+        case A:
+            macro[i] = keyH;
+            break;
+        case S:
+            macro[i] = keyH;
+            break;
+        case D:
+            macro[i] = keyH;
+            break;
+        case F:
+            macro[i] = keyH;
+            break;
+        case G:
+            macro[i] = keyH;
+            break;
+        case H:
+            macro[i] = keyH;
+            break;
+        case J:
+            macro[i] = keyH;
+            break;
+        case K:
+            macro[i] = keyH;
+            break;
+        case L:
+            macro[i] = keyH;
+            break;
+        case Z:
+            macro[i] = keyH;
+            break;
+        case X:
+            macro[i] = keyH;
+            break;
+        case C:
+            macro[i] = keyH;
+            break;
+        case V:
+            macro[i] = keyH;
+            break;
+        case B:
+            macro[i] = keyH;
+            break;
+        case N:
+            macro[i] = keyH;
+            break;
+        case M:
+            macro[i] = keyH;
+            break;
+        case ONE:
+            macro[i] = keyH;
+            break;
+        case TWO:
+            macro[i] = keyH;
+            break;
+        case THREE:
+            macro[i] = keyH;
+            break;
+        case FOUR:
+            macro[i] = keyH;
+            break;
+        case FIVE:
+            macro[i] = keyH;
+            break;
+        case SIX:
+            macro[i] = keyH;
+            break;
+        case SEVEN:
+            macro[i] = keyH;
+            break;
+        case EIGHT:
+            macro[i] = keyH;
+            break;
+        case NINE:
+            macro[i] = keyH;
+            break;
+        case ZERO:
+            macro[i] = keyH;
+            break;
+        default:
+            cout << "switch failed" << endl;
+            break;
+        }
     }
+    cout << "Full recorded macro was: " << endl;
+    cout << macro[0] << endl;
+    cout << macro[1] << endl;
+    cout << macro[2] << endl;
+    cout << macro[3] << endl;
 }
